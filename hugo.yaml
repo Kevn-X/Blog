@@ -1,0 +1,175 @@
+baseURL: ''
+title: Kevin Lab inc.
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Kevin Odom
+  authorimage: /images/Bio-small.jpg
+  og_image: /images/Bio-small.jpg
+  moto: "Cloud | Code | MDM"
+  description: "All things EUC"
+  disable_theme_toggle: false
+  disable_stay_uptodate: false
+
+  p4:
+    heading: "Latest from the cloud"
+    content:
+      - text: "and sporatic ramblings of a madman..."
+
+  p3:
+    heading: "Backed by world-renowned investors"
+    content:
+      - text: "Trending Posts."
+    links:
+      - text: Meet our investors and advisors
+        url: "#"
+    logos:
+      - identifier: a
+        image: "images/global/sample-logo.svg"
+        alt: "a"
+      - identifier: b
+      - identifier: c
+      - identifier: d
+      - identifier: e
+      - identifier: f
+
+  social_media:
+    github:
+      enabled: true
+      url: 'https://github.com/KevinXOdom'
+    facebook:
+      enabled: false
+      url: 'https://facebook.com/KevinOdom'
+    instagram:
+      enabled: false
+      url: 'https://instagram.com/mdmdudex'
+    twitter:
+      enabled: true
+      url: '@KevinOdomNC'
+    
+
+menu:
+  main:
+    - identifier: github
+      name: Github
+      url: /github/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+    - identifier: categories
+      pre: dropdown
+      name: Categories
+      weight: 10
+  categories:
+    - identifier: Azure
+      name: Azure
+      url: categories/azure/
+      weight: 10
+    - identifier: intune
+      name: Intune
+      url: categories/intune/
+      weight: 20
+    - identifier: ConfigMgr
+      name: ConfigMGR
+      url: categories/configmgr/
+      weight: 30
+    - identifier: PowerShell
+      name: PowerShell
+      url: categories/powershell/
+      weight: 40
+
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /categories/blog/
+      weight: 20
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"
