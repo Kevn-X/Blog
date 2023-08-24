@@ -11,7 +11,7 @@ authorimage: ../assets/images/global/Bio-small.jpg
 categories: ['Azure','Intune']
 tags: ['Azure','LogicApp','Automation']
 ---
-__Advertisement :smile:__'
+__Advertisement :smile:__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
   resize in browser.

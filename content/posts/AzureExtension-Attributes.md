@@ -9,7 +9,7 @@ description: Classifying AADJ devices based on user and/or custom attributes
 author: Kevin O.
 authorimage: ../assets/images/global/Bio-small.jpg
 categories: Intune
-tags: [Azure','Intune']
+tags: ['Azure','Intune']
 ---
 __Advertisement :smile:__
 
