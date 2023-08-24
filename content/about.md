@@ -4,239 +4,41 @@ date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
 description: About Us
-featured_image: ../assets/images/featured/featured-img-placeholder.png
+featured_image: ../assets/images/featured/FeatureAbout.png
+---
+🌐 Introduction:
+I am a seasoned Cloud Architect with over 10 years of dedicated experience in the realm of End User Computing (EUC) and Microsoft Intune. Throughout my career, I have honed my skills and expertise in designing, implementing, and optimizing cloud-based solutions that empower organizations to harness the full potential of modern technology while ensuring seamless user experiences and robust security.
+
+🛠️ Expertise:
+My journey in the tech industry has been deeply intertwined with the evolution of cloud computing and its transformative impact on EUC. My proficiency lies in crafting innovative strategies and practical solutions that bridge the gap between cutting-edge technology and real-world business needs. My core areas of specialization include:
+
+End User Computing (EUC): I have a comprehensive understanding of the EUC landscape, having worked extensively on virtual desktop infrastructure (VDI) solutions, remote application delivery, and user-centric computing models. I believe in tailoring EUC solutions to not only meet the technical requirements but also to enhance user productivity and satisfaction.
+
+Microsoft Intune: As a recognized authority in the Intune space, I have led numerous projects focused on mobile device management (MDM), mobile application management (MAM), and endpoint security using Microsoft Intune. My expertise extends to integrating Intune with other Microsoft 365 services, enabling organizations to embrace modern management practices.
+
+🏆 Achievements:
+Over the course of my career, I have achieved remarkable milestones, including:
+
+Successfully leading the migration of a large enterprise from traditional desktop environments to a streamlined virtualized infrastructure, resulting in enhanced flexibility, centralized management, and significant cost savings.
+
+Spearheading the implementation of Microsoft Intune for a global organization, fortifying their security posture while simplifying device management across diverse geographical locations.
+
+Designing and delivering training programs that empower IT teams and end-users to maximize the benefits of EUC solutions and Intune, fostering a culture of continuous learning and skill development.
+
+🤝 Collaboration and Innovation:
+I thrive on collaborating with cross-functional teams, from IT professionals to C-suite executives, to develop tailored cloud 
+strategies that align with business objectives. My goal is to drive innovation by leveraging the latest technologies and methodologies, while always maintaining a keen focus on security, scalability, and user experience.
+
+🔒 Security Advocacy:
+Recognizing the paramount importance of security in today's digital landscape, I am committed to integrating robust security measures into every solution I architect. My holistic approach ensures that data integrity, compliance, and privacy are upheld without compromising usability.
+
+🔮 Future Outlook:
+As the technology landscape continues to evolve, my dedication to staying at the forefront of cloud architecture, EUC, and Intune remains unwavering. I am excited to continue collaborating with forward-thinking organizations, helping them navigate the complexities of the digital age and achieve their strategic IT goals.
+
 ---
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# Contact
 
+📧[Email](KVXLabs@gmail.com)
 
-## Horizontal Rules
-
-***
-
----
-
-___
-
-
-## Typographic replacements
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
-
-## Emphasis
-
-**This is bold text**
-
-__This is bold text__
-
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
-
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
+🐤[Twitter](https://twitter.com/KevinOdomNC)

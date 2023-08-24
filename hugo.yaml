@@ -15,7 +15,7 @@ markup:
   goldmark:
     extensions:
       definitionList: true
-      footnote: true
+      footnote: false
       linkify: true
       linkifyProtocol: https
       strikethrough: true
@@ -79,7 +79,7 @@ params:
   social_media:
     github:
       enabled: true
-      url: 'https://github.com/KevinXOdom'
+      url: 'https://github.com/Kevn-X'
     facebook:
       enabled: false
       url: 'https://facebook.com/KevinOdom'
@@ -95,7 +95,7 @@ menu:
   main:
     - identifier: github
       name: Github
-      url: /github/
+      url: 'https://github.com/Kevn-X'
       weight: 20
     - identifier: about
       name: About

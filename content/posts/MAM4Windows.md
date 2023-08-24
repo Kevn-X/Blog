@@ -11,248 +11,53 @@ authorimage: ../assets/images/global/bio-small.jpg
 categories: Intune
 tags: ['MAM','Intune', 'BYOD']
 ---
-__Advertisement :smile:__
+In a recent unveiling, Microsoft introduced the eagerly anticipated Mobile Application Management (MAM) for Windows. As of July 7th, 2023, this new addition has entered the Public Preview phase, allowing us to explore and experiment with its capabilities firsthand.
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+MAM brings a unique dimension to the table, enabling the application of policies to corporate applications. This measure ensures the safeguarding of sensitive organizational data and effectively prevents its inadvertent exposure on personal devices. This capability proves particularly valuable in Bring Your Own Device (BYOD) scenarios, eliminating the need for extensive device management through Microsoft Intune.
 
-You will like those projects!
+While MAM has long been available for Android and iOS platforms, its integration with Windows comes at a crucial juncture. This transition comes in light of the discontinuation of its predecessor, Windows Information Protection (WIP), in future Windows versions.
 
----
+In this blog post, we will embark on an initial exploration of MAM for Windows. Please bear in mind that this review is based on the current public preview, and the landscape is subject to evolution.
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+### Sections Covered:
 
+#### <u>Prerequisites</u>
+- MAM User Scope
+- Integration of Mobile Threat Defense Connector
+- Configuration of Application Protection Policy
+- Implementation of MAM through Conditional Access
+- User Experience
+- Conclusive Thoughts
+- Essential Prerequisites:
 
-## Horizontal Rules
+To set up MAM for Windows during this Public Preview, enrollment in the program and tenant enrollment are prerequisites. Furthermore, there are specific requirements tied to Windows OS, Windows Security, and Microsoft Edge versions. Given the dynamic nature of these requirements, they are continually updated within the preview program.
 
-***
+It's essential that devices aren't Azure AD joined or enrolled in Mobile Device Management (MDM) for a seamless setup process.
 
----
+#### <u>Scoping MAM for Users:</u>
 
-___
+Configuring MAM user scope correctly is paramount. This step ensures that user groups are properly enabled, allowing users to register devices without enrollment. Additionally, corporate client apps can benefit from Application Protection policies.
 
+#### <u>The Mobile Threat Defense Connector:</u>
 
-## Typographic replacements
+Integration of the Mobile Threat Defense (MTD) connector is a pivotal step. It integrates seamlessly with Microsoft Intune, detecting local health threats and enabling the blocking of access from vulnerable or compromised devices. Upon device enrollment in MAM, the connector should activate both in the portal and on the device.
 
-Enable typographer option to see result.
+#### <u>Setting Up Application Protection Policy:</u>
 
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+A crucial aspect of MAM involves configuring the Application Protection policy. Presently, this policy is applicable only to the Microsoft Edge app. While limited in scope, this will likely expand to encompass other Microsoft applications in the future.
 
-test.. test... test..... test?..... test!....
+The policy also entails data protection restrictions, enabling specification of data source origins, organizational data destinations, cut-copy-paste actions, and more. While the current options are limited, they are expected to evolve during the public preview.
 
-!!!!!! ???? ,,  -- ---
+#### <u>Enforcing MAM through Conditional Access:</u>
 
-"Smartypants, double quotes" and 'single quotes'
+Enforcing MAM for Windows involves configuring a conditional access policy. This policy mandates the application protection policy previously established, ensuring users cannot access resources without the protective umbrella of Mobile Application Management.
 
+#### <u>Exploring User Experience:</u>
 
-## Emphasis
+Upon completing the setup, users on personal Windows devices, not linked to Azure AD or MDM, gain access to the Microsoft 365 portal. Creation of a new Microsoft Edge profile and sign-in with a corporate account become seamless. Corporate app data remains secure within the Microsoft Edge profile, even as users navigate beyond the Microsoft 365 environment.
 
-**This is bold text**
+#### <u>A Glimpse into the Future:</u>
 
-__This is bold text__
+The current capabilities of MAM for Windows mirror those achievable through session policies in Microsoft Defender for Cloud Apps. However, the promise of MAM's future potential is truly exciting. As it advances towards general availability, it holds the potential to play a pivotal role in granting secure access to corporate resources on personal devices. The inclusion of the Mobile Threat Defense connector positions it as a frontrunner in comparison to existing methods.
 
-*This is italic text*
-
-_This is italic text_
-
-~~Strikethrough~~
-
-
-## Blockquotes
-
-
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
-
-
-## Lists
-
-Unordered
-
-+ Create a list by starting a line with `+`, `-`, or `*`
-+ Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
-    * Ac tristique libero volutpat at
-    + Facilisis in pretium nisl aliquet
-    - Nulla volutpat aliquam velit
-+ Very easy!
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-
-1. You can use sequential numbers...
-1. ...or keep all the numbers as `1.`
-
-Start numbering with offset:
-
-57. foo
-1. bar
-
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
-
-``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-Right aligned columns
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-## Links
-
-[link text](http://dev.nodeca.com)
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
-
-## Images
-
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- X^2^
-- H~2~O
-
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
-
+While certain features like support for a broader range of applications and enhanced security measures are not yet available in this preview, the future of MAM for Windows certainly looks promising. With the ability to maintain data integrity and user experience on personal devices, MAM is undoubtedly carving a path toward a more secure and efficient digital workspace.
