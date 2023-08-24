@@ -8,7 +8,7 @@ summary: Ever had the need to identify and group devices based off of non-native
 description: Classifying AADJ devices based on user and/or custom attributes
 author: Kevin O.
 authorimage: ../assets/images/global/Bio-small.jpg
-categories: Intune
+categories: ['Azure','Intune']
 tags: ['Azure','Intune']
 ---
 __Advertisement :smile:__
