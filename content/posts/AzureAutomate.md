@@ -8,7 +8,7 @@ summary: For this blog entry we are going to create a Logic App that crawls a te
 description: Creating a logic app to automate hardware hash imports by technicians.
 author: Kevin O.
 authorimage: ../assets/images/global/Bio-small.jpg
-categories: [Azure','Intune']
+categories: ['Azure','Intune']
 tags: ['Azure','LogicApp','Automation']
 ---
 __Advertisement :smile:__'
